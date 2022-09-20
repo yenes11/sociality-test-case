@@ -1,0 +1,39 @@
+.channel {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  /* background-color: aliceblue; */
+  border-radius: 5px;
+  position: relative;
+}
+
+.channel-notifications {
+  position: absolute;
+  background-color: #39C1A9;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  top: -10px;
+  right: -10px;
+  font-size: 11px;
+  color: #FFF;
+  text-align: center;
+  font-weight: 700;
+}
+
+.selected-channel {
+  background-color: #f55661;
+  width: 6px;
+  height: 45px;
+  border-radius: 0 5px 5px 0;
+  position: absolute;
+  margin-top: auto;
+  margin-bottom: auto;
+  left: -14px;
+  top: 0;
+  bottom: 0;
+}
+
+.channel-logo {
+  width: 100%;
+}
