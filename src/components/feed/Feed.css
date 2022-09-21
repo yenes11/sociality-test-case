@@ -4,7 +4,6 @@
   flex-wrap: wrap;
   position: relative;
   margin-bottom: 50px;
-  overflow-y: scroll;
 }
 .date {
   position: absolute;
