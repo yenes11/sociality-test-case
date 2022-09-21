@@ -55,7 +55,13 @@
 .post-statistics > img:nth-child(n+2) { margin-left: 15px; }
 
 .post-photo {
-  width: 283px;
+  width: 100%
 }
 
 a { text-decoration: none;}
+
+@media screen and (max-width: 481px) {
+  .card { width: calc(100vw - 70px) }
+  .post-actions > * { margin-left: 10px; }
+  .post-date { font-size: 12px;}
+}

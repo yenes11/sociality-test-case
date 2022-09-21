@@ -28,10 +28,11 @@ export const Sidebar = () => {
   const toggleSidebar = () => {
     // debugger
     const sideBarWidth = document.querySelector('.sidebar-container');
-    if (sideBarWidth.style.width === '80px')
-      sideBarWidth.style.width = '320px';
+    console.log(sideBarWidth.style.width)
+    if (sideBarWidth.style.width === '60px' || !sideBarWidth.style.width)
+      sideBarWidth.style.width = '300px';
     else
-      sideBarWidth.style.width = '80px';
+      sideBarWidth.style.width = '60px';
   }
 
   return (

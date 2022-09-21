@@ -17,8 +17,8 @@
   padding: 50px 50px 0 50px;
 }
 
-@media screen and (max-width: 800px) {
-  .infobar-layout { padding: 30px 30px 0 30px;}
-  .App { grid-template-columns: 80px calc(100vw - 80px);}
-  .feed-layout { padding: 50px 30px 30px 30px;}
+@media screen and (max-width:481px) {
+  .App { grid-template-columns: 60px calc(100vw - 60px);}
+  .infobar-layout { padding: 30px 0px 0 15px;}
+  .feed-layout { padding: 50px 5px 30px 5px;}
 }
