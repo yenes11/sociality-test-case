@@ -1,11 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './ChannelMenu.css';
-import EngageLogo from './engage.svg';
-import SummaryLogo from './summary.svg';
-import ReportLogo from './report.svg';
-import PublishLogo from './publish.svg';
-import PlusLogo from './plus.svg';
-import ListenLogo from './listen.svg';
+import { EngageLogo, SummaryLogo, ReportLogo, PublishLogo, PlusLogo, ListenLogo } from './images';
 
 const logos = {
   'engage': EngageLogo,

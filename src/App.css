@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 320px calc(100vw - 320px);
   background-color: #f5f7f8;
+  overflow-x: hidden;
 }
 
 .feed-layout {
@@ -10,14 +11,13 @@
   display: flex;
   gap: 40px;
   flex-wrap: wrap;
-  overflow: scroll;
 }
 
 .infobar-layout {
   padding: 50px 50px 0 50px;
 }
 
-@media screen and (max-width:481px) {
+@media screen and (max-width:830px) {
   .App { grid-template-columns: 60px calc(100vw - 60px);}
   .infobar-layout { padding: 30px 0px 0 15px;}
   .feed-layout { padding: 50px 5px 30px 5px;}

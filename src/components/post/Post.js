@@ -1,17 +1,7 @@
 import React from 'react';
 import './Post.css';
-import deleteIcon from './delete.svg';
-import optionsIcon from './options.svg';
-import cancelIcon from './cancel.svg';
-import likesIcon from './likes.svg';
-import sharesIcon from './shares.svg';
-import viewsIcon from './views.svg';
-import commentsIcon from './comments.svg';
-import FacebookLogo from './FacebookLogo.svg';
-import InstagramLogo from './Instagram-logo.svg';
-import TwitterLogo from './Twitter-logo.svg';
-import BrokenImage from './no-image.png';
 import { convertDate } from '../feed/Feed';
+import { DeleteIcon, OptionsIcon, CancelIcon, LikesIcon, SharesIcon, ViewsIcon, CommentsIcon, FacebookLogo, InstagramLogo, TwitterLogo, BrokenImage } from './images';
 
 const statusColor = {
   0: '#f6be37',
@@ -47,21 +37,21 @@ export const Post = ({ props : { published_at, isPublished, status, entry, link,
       <div className="post-details">
         <span className='post-date'>{ convertDate(published_at.split(' ')[0]) + ' - ' + published_at.split(' ')[1] }</span>
         <div className="post-actions">
-          <img src={cancelIcon} alt="cancel" />
-          <img src={deleteIcon} alt="delete" />
-          <img src={optionsIcon} alt="options" />
+          <img src={CancelIcon} alt="cancel" />
+          <img src={DeleteIcon} alt="delete" />
+          <img src={OptionsIcon} alt="options" />
         </div>
       </div>
       <div dangerouslySetInnerHTML={{ __html: urlify(entry.message)}} className="post-text"></div>
       <img src={entry.image} onError={brokenImage} alt="Post" className='post-photo' />
       <div className="post-statistics">
-        <img src={likesIcon} alt="likes" />
+        <img src={LikesIcon} alt="likes" />
         <span>0</span>
-        <img src={commentsIcon} alt="comments" />
+        <img src={CommentsIcon} alt="comments" />
         <span>0</span>
-        <img src={sharesIcon} alt="shares" />
+        <img src={SharesIcon} alt="shares" />
         <span>0</span>
-        <img src={viewsIcon} alt="views" />
+        <img src={ViewsIcon} alt="views" />
         <span>0</span>
       </div>
     </div>

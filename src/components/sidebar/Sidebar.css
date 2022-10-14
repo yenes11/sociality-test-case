@@ -62,7 +62,7 @@
 }
 
 
-@media screen and (max-width: 481px){
+@media screen and (max-width:830px){
   .sidebar-container { grid-template-columns: 60px 240px; width: 60px; overflow: hidden }
   .hamburger-menu { display: block; left: 13px;}
   .notifications { padding: 20px 0px;  }

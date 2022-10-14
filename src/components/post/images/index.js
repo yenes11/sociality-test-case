@@ -1,0 +1,11 @@
+export { default as DeleteIcon } from './delete.svg';
+export { default as OptionsIcon } from './options.svg';
+export { default as CancelIcon } from './cancel.svg';
+export { default as LikesIcon } from './likes.svg';
+export { default as SharesIcon } from './shares.svg';
+export { default as ViewsIcon } from './views.svg';
+export { default as CommentsIcon } from './comments.svg';
+export { default as FacebookLogo } from './FacebookLogo.svg';
+export { default as InstagramLogo } from './Instagram-logo.svg';
+export { default as TwitterLogo } from './Twitter-logo.svg';
+export { default as BrokenImage } from './no-image.png';

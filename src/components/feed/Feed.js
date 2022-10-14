@@ -11,7 +11,7 @@ export const convertDate = (date) => {
 export const Feed = () => {
   return (
     <div>
-      { posts.posts_by_date && Object.keys(posts.posts_by_date).sort((a, b) => b > a).map(date => (
+      { posts.posts_by_date && Object.keys(posts.posts_by_date).sort((a, b) => new Date(b) - new Date(a)).map(date => (
         <div key={date} className="daily-post">
           <div className='date'>{convertDate(date)}</div>
           { posts.posts_by_date[date].map((post, i) => (

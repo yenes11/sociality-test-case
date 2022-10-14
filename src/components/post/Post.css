@@ -1,7 +1,7 @@
 .card {
   box-sizing: border-box;
   padding: 20px 20px 10px 60px;
-  width: 369px;
+  max-width: 369px;
   background-color: #FFF;
   border: 1px solid #e5e6ee;
   border-radius: 6px;
@@ -60,8 +60,14 @@
 
 a { text-decoration: none;}
 
-@media screen and (max-width: 481px) {
+@media screen and (max-width:830px) {
   .card { width: calc(100vw - 70px) }
   .post-actions > * { margin-left: 10px; }
   .post-date { font-size: 12px;}
+}
+
+@media screen and (max-width:481px) {
+  .post-status { width: 30px; }
+  .card { padding: 20px 10px 10px 40px; }
+  .post-actions, .post-date { flex: 1; }  
 }
